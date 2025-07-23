@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2? family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+     background: #1f242d;
+  }
+/* permet de donner la couleur  dans les textes  */
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width:  100%;
+    padding: 25px 9%;
+    /* nous allons enlever la couleur de nav pour 
+    donner un effet de transparent  */
+    /* background: slateblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar .logo{
+    font-size:  30px ;
+    font-weight: 700;
+}
+/* styliser maintenant la liste des liens  */
+
+.navbar  ul{
+    display: flex;
+/* display flex a permit que les textes s'allonges de la sorte */
+}
+
+.navbar  ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+/* gerer les liens de texte */
+.navbar  ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    transition:.5s ;
+}
+/* gerer les transitions dans les lien apres survolle  */
+.navbar  ul li:hover a ,
+.navbar  ul li.active a
+    {
+    color: #7cf03d;
+}
+
+
+/* deuxieme section  */
+/* celaa va nous permettre de centrer
+ non selment le texte mais */
+
+.home {
+   display: flex;
+   align-items: center;
+   height: 1001vh;
+   padding: 60px 9% 0;
+   color: #fff;
+
+}
+
+/* styliser le nom */
+
+.home-info h1{
+    /* on donne une grandeur de police  */
+    font-size: 55px;
+
+}
+
+.home-info h1{
+
+    font-size: 32px ;
+    margin-top: -10px;
+}
+.home-info p{
+    font-size:  16px;
+    margin: 10px 0 25px;
+
+}
+/*  gerer les positionnement des socieau media  */
+.btn {
+    display: inline-block;
+    padding: 10px 30px ;
+    background: #7cF03d;
+    border: 2px solid #7cf03d;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #7cf03d;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight:600 ;
+    
+}
+
+.btn:hover {
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+}
+
+.home-info .btn-sci .sci a 
+{
+    display: inline-flex;
+    padding:8px ;
+    border-radius: 2px solid #7cf03d;
+    font-size: 20 px ;
+    color: #7cF03d;
+    margin: 0 8px;
+    transform: .5s;
+}
+
+.home-info .btn-sci .sci a :hover{
+    background: #7cF03d;
+    color: #1f242d;
+    box-shadow: 0 0 10px  #7cF03d ;
+
+
+}
